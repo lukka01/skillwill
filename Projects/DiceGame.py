@@ -1,17 +1,16 @@
-
 import random
+
 while True:
-    choice = input('Roll the dice (y/n): ').lower()
+    choice = input('Roll the dice? (y/n) ').lower()
     if choice == 'y':
-        die1 = random.randint(1,6)
-        die2 = random.randint(1,6)
-        print(f" you have rolled: {die1}, and {die2} ")
+        dice1 = random.randint(1,6)
+        dice2 = random.randint(1,6)
+        print(f"you have rolled: {dice1}, and {dice2}")
     elif choice == 'n':
-        print("game over")
+        print("Thanks for playing! ")
         break
     else:
-        print('shens dedas sheveci')
-
+        raise ValueError("Invalid input! ")
 
 
 
